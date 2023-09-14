@@ -32,7 +32,7 @@ public class Health : MonoBehaviour
         {
             
             playerHealth = playerHealth - 1;
-            _healthBar.UpdateHealthBar(_maxHealth, playerHealth); // update heathbar
+            _healthBar.UpdateHealthBar(_maxHealth, playerHealth); // update healthbar
             //Debug.Log("Player Hit! Player Health: " + playerHealth);
 
             if (playerHealth <= 0)
