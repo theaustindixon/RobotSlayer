@@ -23,8 +23,7 @@ public class Health : MonoBehaviour
         {
             playerHealth = _maxHealth;
             HealUp.Play();
-            _healthBar.UpdateHealthBar(_maxHealth, playerHealth); // update heathbar
-            //Debug.Log("Player Health: " + playerHealth);
+            _healthBar.UpdateHealthBar(_maxHealth, playerHealth); // update healthbar
 
         }
 
@@ -33,7 +32,6 @@ public class Health : MonoBehaviour
             
             playerHealth = playerHealth - 1;
             _healthBar.UpdateHealthBar(_maxHealth, playerHealth); // update healthbar
-            //Debug.Log("Player Hit! Player Health: " + playerHealth);
 
             if (playerHealth <= 0)
             {
